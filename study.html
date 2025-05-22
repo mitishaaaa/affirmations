@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gentle Study Reminders</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #fff3e0, #e1f5fe);
+      color: #444;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    #affirmation {
+      font-size: 1.5em;
+      margin: 30px auto;
+      max-width: 600px;
+    }
+    button {
+      padding: 12px 25px;
+      font-size: 1em;
+      border: none;
+      border-radius: 10px;
+      background-color: #aed581;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #9ccc65;
+    }
+    a {
+      display: block;
+      margin-top: 30px;
+      color: #333;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>📚 It's Okay to Pause</h1>
+  <div id="affirmation">Your brain is not broken. You’re just tired. Rest is allowed.</div>
+  <button onclick="showAffirmation()">I need another reminder</button>
+
+  <script>
+    const affirmations = [
+      "You are not behind. You’re moving at your own pace.",
+      "Smart doesn’t mean fast. You are deeply capable.",
+      "One tiny step still counts as progress.",
+      "Your brain learns in bursts, not straight lines.",
+      "You’re allowed to take breaks. You’re still worthy.",
+      "No one is judging you as harshly as you judge yourself.",
+      "Even if you didn’t study today, your worth hasn't changed.",
+      "You are trying, and that’s already brave.",
+      "It’s okay to relearn things. Nothing is wrong with you.",
+      "Your future doesn’t depend on one perfect day."
+    ];
+
+    function showAffirmation() {
+      const random = Math.floor(Math.random() * affirmations.length);
+      document.getElementById('affirmation').textContent = affirmations[random];
+    }
+  </script>
+
+  <a href="index.html">Back to Home</a>
+</body>
+</html>

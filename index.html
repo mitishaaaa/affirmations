@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Affirmation Garden</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #d0c9eb, #eecbeb);
+      text-align: center;
+      padding: 200px;
+      color: #333;
+    }
+    #affirmation {
+      font-size: 1.8em;
+      margin: 40px auto;
+      max-width: 600px;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 1em;
+      border: none;
+      border-radius: 10px;
+      background: linear-gradient(to bottom, #d289bf, #f7befa);
+      /* background-color: #ffa0ef; */
+      cursor: pointer;
+      transition: background 0.9s;
+    }
+    button:hover {
+      background-color: #efc2f2;
+    }
+  </style>
+</head>
+<body>
+  <h1>🌼 Affirmation Garden 🌼</h1>
+  <div id="affirmation">You are safe. You are held. You are healing.</div>
+  <button onclick="showAffirmation()">Show me another</button>
+
+  <script>
+    const affirmations = [
+      "You are safe. You are held. You are healing.",
+      "You are enough, exactly as you are.",
+      "You are allowed to rest. You are still worthy.",
+      "Your sensitivity is your strength.",
+      "You don’t have to be perfect to be loved.",
+      "You are doing better than you think.",
+      "Your presence is a gift to this world.",
+      "Even small steps are progress. You’re moving forward.",
+      "You can start again. As many times as you need."
+    ];
+
+    function showAffirmation() {
+      const random = Math.floor(Math.random() * affirmations.length);
+      document.getElementById('affirmation').textContent = affirmations[random];
+
+    }
+
+</script>
+</body>
+</html>
+    
+<div> <button onclick="showAffirmation()"><a href="study.html">📖 I'm stressed about studying</a></button> </div>
